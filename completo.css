@@ -1,0 +1,141 @@
+/* Google Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #333, #555);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+  background: #ff6347;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: inset 0 -10px 15px rgba(0,0,0,0.2);
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #fff;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #ff6347;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  header nav li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about, .contact-form {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
